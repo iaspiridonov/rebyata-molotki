@@ -1,0 +1,12 @@
+.u-bottom-underline {
+    display: inline-block;
+    border-bottom: 7px solid $color-primary;
+    line-height: 0.7;
+
+    &--sm {
+        @media (max-width: $sm) {
+            border-bottom: none;
+            line-height: 1.3;
+        }
+    }
+}

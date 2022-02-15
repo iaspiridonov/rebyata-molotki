@@ -1,0 +1,21 @@
+# Ignore IDE specific folders.
+# .vscode/
+.idea/
+
+# Ignore npm packages folder everywhere.
+node_modules/
+
+# Ignore 
+site/assets/
+
+# Igmore css build folder. All changes should be made in in .scss source files.
+site/templates/static/css/
+
+# Ignore congig file for development environment.
+site/config-dev.php
+
+# Ignore modules backups (folders names starting with a dot).
+site/modules/.*/
+
+# Ignore compiled styles
+/css

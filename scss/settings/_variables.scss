@@ -1,0 +1,32 @@
+////
+/// Common variables
+///
+/// Put all reusable variables in here. 
+/// Breakpoint variables are defined in settings/breakpoints
+////
+
+/// Color variables.
+
+$color-default: #F3F3F3;
+$color-primary: #FA7126;
+$color-secondary: #524277;
+
+$gradient-primary: linear-gradient(180deg, rgba(248, 162, 115, 1), rgba(250, 114, 39, 1));
+$gradient-secondary: linear-gradient(180deg, rgba(126, 115, 151, 1), rgba(83, 67, 120, 1));
+
+$color-text: #333;
+$color-text-inverted: #ffffff;
+$color-text-pall: #999999;
+
+$border-radius: 6px;
+
+$transition-in: all 0.5s;
+$transition-out: all 0.3s;
+
+
+/// Fonts.
+
+$font-size-base: 16px;
+$line-height-base: 1.4;
+$font-family-base: 'Roboto', sans-serif;
+$font-family-headings: 'Bebas Neue', sans-serif;
