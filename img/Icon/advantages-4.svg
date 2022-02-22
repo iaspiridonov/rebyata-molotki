@@ -1,0 +1,16 @@
+<svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32.5" r="31.5" stroke="#FA7126" stroke-dasharray="2 2"/>
+<path d="M17 13.5V13C16.7239 13 16.5 13.2239 16.5 13.5H17ZM46 13.5H46.5C46.5 13.2239 46.2761 13 46 13V13.5ZM46 51.5V52C46.2761 52 46.5 51.7761 46.5 51.5H46ZM17 51.5H16.5C16.5 51.7761 16.7239 52 17 52V51.5ZM45.5 18C45.5 18.2761 45.7239 18.5 46 18.5C46.2761 18.5 46.5 18.2761 46.5 18H45.5ZM46.5 19.5C46.5 19.2239 46.2761 19 46 19C45.7239 19 45.5 19.2239 45.5 19.5H46.5ZM45.5 20C45.5 20.2761 45.7239 20.5 46 20.5C46.2761 20.5 46.5 20.2761 46.5 20H45.5ZM46.5 21.5C46.5 21.2239 46.2761 21 46 21C45.7239 21 45.5 21.2239 45.5 21.5H46.5ZM17 14H46V13H17V14ZM46 51H17V52H46V51ZM17.5 51.5V13.5H16.5V51.5H17.5ZM45.5 13.5V18H46.5V13.5H45.5ZM45.5 19.5V20H46.5V19.5H45.5ZM45.5 21.5V51.5H46.5V21.5H45.5Z" fill="#FA7126"/>
+<rect x="20.5" y="18" width="3" height="3" stroke="#5F236B" stroke-linejoin="round"/>
+<rect x="26.5" y="18" width="3" height="3" stroke="#5F236B" stroke-linejoin="round"/>
+<rect x="32.5" y="18" width="3" height="3" stroke="#5F236B" stroke-linejoin="round"/>
+<rect x="38.5" y="18" width="3" height="3" stroke="#5F236B" stroke-linejoin="round"/>
+<line x1="20.5" y1="24" x2="35.5" y2="24" stroke="#5F236B" stroke-linecap="round"/>
+<path d="M20.5 27H41.5" stroke="#5F236B" stroke-linecap="round"/>
+<path d="M20.5 30L31 30" stroke="#5F236B" stroke-linecap="round"/>
+<line x1="20.5" y1="33" x2="35.5" y2="33" stroke="#5F236B" stroke-linecap="round"/>
+<path d="M20.5 36H37.5" stroke="#5F236B" stroke-linecap="round"/>
+<line x1="20.5" y1="39" x2="35.5" y2="39" stroke="#5F236B" stroke-linecap="round"/>
+<line x1="20.5" y1="42" x2="35.5" y2="42" stroke="#5F236B" stroke-linecap="round"/>
+<path d="M52.5981 26L52.8481 25.567L52.4151 25.317L50.683 24.317L50.25 24.067L50 24.5L48.5 27.0981L48.25 27.5311L48.2619 27.5379L48.0071 27.9522L38.5741 43.2906L38.5382 43.3491L38.5193 43.415L36.8183 49.3612L37.6585 49.8463L41.9575 45.4001L42.0052 45.3508L42.0379 45.2904L50.6049 29.452L50.8362 29.0242L50.8481 29.0311L51.0981 28.5981L52.5981 26Z" fill="#5F236B" stroke="white"/>
+</svg>

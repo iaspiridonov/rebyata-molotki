@@ -1,0 +1,108 @@
+.navbar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+
+    @media (min-width: $md) {
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+
+    @media (min-width: $lg) {
+        padding-top: 50px;
+        padding-bottom: 120px;
+        align-items: center;
+    }
+
+    @media (min-width: $xl) {
+        padding-bottom: 160px;
+        align-items: baseline;
+        flex-wrap: nowrap;
+    }
+    
+    @media (min-width: $lg) {
+
+        &__list {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            @media (min-width: $xl) {
+                margin-left: 25px;
+            }
+
+            @media (min-width: $xxl) {
+                margin-left: 70px;
+            }
+        }
+
+        &__item {
+            display: inline-block;
+            padding: 0 10px;
+        }
+    }
+
+    &__link {
+        color: $color-secondary;
+        font-weight: 400;
+        transition: .3s;;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    &__socials {;
+        align-items: center;
+        display: flex;
+
+        @media (min-width: $md) {
+            transform: translateY(-10px);
+        }
+
+        @media (min-width: $lg) {
+            align-items: baseline;
+            transform: none;
+        }
+
+        & svg {
+            fill: $color-secondary;
+            transition: .3s;
+        }
+
+        & a {
+            margin-right: 8px;
+            display: flex;
+            align-items: center;
+
+            @media (min-width: $md) {
+                margin-right: 15px;
+            }
+
+            &:hover {
+
+                & svg {
+                    fill: $color-primary;
+                }
+            }
+        }
+
+        &-phone {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            color: $color-secondary;
+            transition: .3s;
+            margin-right: 0;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+}

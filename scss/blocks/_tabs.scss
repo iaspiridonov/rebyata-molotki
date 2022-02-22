@@ -1,0 +1,35 @@
+.tabs {
+
+    &__item {
+        font-weight: 700;
+        font-size: 20px;
+        padding-bottom: 15px;
+        border-bottom: 4px solid #E0E2E7;
+        display: inline-block;
+        margin-right: 20px;
+        cursor: pointer;
+        transition: .3s;
+        margin-bottom: 40px;
+
+        @media (min-width: $lg) {
+            margin-right: 40px;
+        }
+
+        &:hover, &--active {
+            color: $color-primary;
+            border-color: $color-primary;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__content {
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
+}

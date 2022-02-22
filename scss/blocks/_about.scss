@@ -1,0 +1,46 @@
+.about {
+
+    &__link {
+        display: flex;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        @media (min-width: $sm) {
+            flex-direction: row;
+        }
+        
+        & span {
+            font-weight: 400;
+            color: $color-primary;
+            margin-right: 15px;
+        }
+
+        & a {
+            font-weight: 700;
+            color: $color-secondary;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__socials {
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+
+        @media (min-width: $sm) {
+            margin-top: 15px;
+        }
+
+        &-item {
+            margin-right: 15px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

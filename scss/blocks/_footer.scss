@@ -1,0 +1,108 @@
+.footer {
+    color: #fff;
+    background-image: url('../img/footer-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
+
+    @media (min-width: $md) {
+        background-image: none;
+    }
+
+    & a {
+        color: #fff;
+        font-weight: 400;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__menu {
+        margin-bottom: 15px;
+
+        @media (min-width: $md) {
+            margin-bottom: 40px;
+        }
+
+        & a {
+            margin-right: 15px;
+            font-weight: 400;
+            display: inline-block;
+
+            @media (min-width: $lg) {
+                margin-right: 40px;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    &__lists {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $md) {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+
+    &__list {
+        padding-right: 40px;
+        margin-bottom: 15px;
+
+        @media (min-width: $md) {
+            margin-bottom: 0;
+        }
+
+        &-title {
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        &-item {
+            display: flex;
+            align-items: flex-start;
+            font-weight: 400;
+            margin-bottom: 5px;
+
+            & img {
+                transform: translateY(3px);
+            }
+        }
+    }
+
+    &__copy {
+        margin-top: 60px;
+        padding: 20px 0;
+        border-top: 2px solid #E0E2E7;
+        display: flex;
+        font-size: 12px;
+        flex-direction: column;
+        position: relative;
+
+        @media (min-width: $sm) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        & > * {
+            @media (min-width: $sm) {
+                width: 33%;
+            }
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        right: 0;
+    }
+}

@@ -1,0 +1,22 @@
+.section {
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    @media (min-width: $lg) {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+    
+    &__kviz {
+        transform: translateY(-220px);
+        
+        @media (min-width: $md) {
+            transform: none;
+        }
+    }
+
+    &--pt-200 {
+        padding-top: 200px;
+    }
+
+}

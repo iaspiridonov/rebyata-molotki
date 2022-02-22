@@ -1,0 +1,115 @@
+.price {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+    @media (min-width: $md) {
+        height: auto;
+    }
+
+    @media (min-width: $xl) {
+        flex-wrap: nowrap;
+    }
+
+    &__title {
+
+        @media (max-width: 575.98px) {
+            font-size: 60px !important;
+        }
+
+        @media (min-width: $xl) {
+            font-size: 100px !important;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        z-index: 2;
+        transform: translateY(258px);
+
+        @media (min-width: $md) {
+            transform: translateY(100px);
+        }
+
+        @media (min-width: $lg) {
+            transform: translateY(100px);
+        }
+
+        @media (min-width: $xl) {
+            transform: none;
+        }
+    }
+
+    &__desc {
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        position: absolute;
+        display: none;
+        bottom: 0;
+
+        @media (min-width: $md) {
+            left: initial;
+            right: -20%;
+            display: inline-block;
+        }
+
+        @media (min-width: $lg) {
+            right: 0;
+        }
+
+        @media (min-width: $xl) {
+            left: 38%;
+        }
+
+        @media (min-width: $xxl) {
+            left: 32%;
+        }
+    }
+
+    &__options {
+
+        & li {
+            font-weight: 700;
+            font-size: 30px;
+            font-family: $font-family-headings;
+            color: $color-primary;
+
+            & span {
+                color: #fff;;
+            }
+
+            @media (min-width: $sm) {
+                font-size: 42px;
+            }
+        }
+    }
+
+    &__bg {
+        background: $gradient-secondary;
+        height: calc(100% - 312px);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+
+        @media (min-width: $md) {
+            height: calc(100% - 158px);
+        }
+
+        @media (min-width: $lg) {
+            height: calc(100% - 188px);
+        }
+
+        @media (min-width: $xl) {
+            height: calc(100% - 88px);
+        }
+
+        @media (min-width: $xxl) {
+            height: calc(100% - 153px);
+        }
+    }
+}

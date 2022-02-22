@@ -1,0 +1,28 @@
+.advantage {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    
+    @media (min-width: $lg) {
+        margin-bottom: 60px;
+    }
+    
+    &__title {
+        font-weight: 700;
+        margin-bottom: 7px;
+    }
+
+    &__desc {
+        font-weight: 400;
+    }
+
+    &__wrapper {
+        padding-left: 15px;
+        margin-left: 15px;
+        border-left: 1px solid $color-primary;
+    }
+
+    &__img {
+
+    }
+}
