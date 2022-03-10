@@ -1,0 +1,96 @@
+.modal-kviz {
+
+    & .modal-content {
+        border-radius: 18px !important;
+        position: relative;
+        padding: 15px;
+        text-align: center;
+
+        @media (min-width: $sm) {
+            padding: 35px;
+        }
+    }
+
+    &__buttons {
+        position: absolute;
+        top: 0;
+        width: calc(100% - 32px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__back {
+        left: 40px;
+        cursor: pointer;
+    }
+
+    &__close {
+        right: 40px;
+        cursor: pointer;
+    }
+
+    &__count {
+        font-weight: 700;
+        font-family: $font-family-headings;
+        font-size: 22px;
+        color: #919399;
+        margin-bottom: 20px;
+
+        & span {
+            font-size: 32px;
+            color: $color-secondary;
+        }
+    }
+
+    &__title {
+        line-height: 1.2;
+        font-size: 30px;
+        font-family: $font-family-headings;
+        color: $color-primary;
+        margin-bottom: 10px;
+
+    }
+
+    &__desc {
+        color: $color-secondary;
+        margin-bottom: 40px;
+    }
+
+    & .kviz__select {
+        text-align: left;
+        // & .kviz__checkbox-input:checked+label::before {
+        //     // border: 1px solid #E0E2E7 !important;
+        //     background-color: $color-primary;
+        // }
+
+        & label {
+            color: $color-secondary;
+
+            &:before {
+                border: 1px solid #E0E2E7 !important;
+            }
+        }
+    }
+
+    &__input {
+        height: 55px;
+        padding: 0 15px;
+        width: 100%;
+        border: 1px solid #D5D8DE;
+        border-radius: 6px;
+        margin-bottom: 40px;
+        
+        &::placeholder {
+            color: #919399;
+        }
+    }
+
+    &__sale {
+        font-weight: 700;
+        font-size: 22px;
+        color: $color-primary;
+        text-align: center;
+        font-family: $font-family-headings;
+    }
+}

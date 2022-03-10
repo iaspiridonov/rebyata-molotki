@@ -1,0 +1,54 @@
+.ui-slider {
+    width: 100%;
+    background-color: #E0E2E7;
+    height: 4px;
+    position: relative;
+    
+    &-handle {
+
+        font-size: 16px;
+        top: -26px !important;
+        color: $color-primary;
+        position: relative;
+        width: 28px !important;
+        text-align: center;
+
+        &:after {
+            content: '';
+            background-color: #fff;
+            width: 16px;
+            height: 16px;
+            border: 1px solid $color-primary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            top: 20px !important;
+            left: 5px;
+            color: #fff;
+            position: absolute;
+        }
+    }
+
+    &__min, &__max {
+        position: absolute;
+        top: 15px;
+        color: $color-primary;
+    }
+
+    &__min {
+        display: inline-block;
+        text-align: left;
+        left: -18px;
+    }
+
+    &__max {
+        display: inline-block;
+        text-align: right;
+        right: -18px;
+    }
+
+    &-range {
+        background-color: $color-primary;
+    }
+}

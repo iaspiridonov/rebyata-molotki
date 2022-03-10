@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="vendor/mmenu/dist/mmenu.css">
     <link rel="stylesheet" href="vendor/mburger-css/dist/mburger.css">
     <link rel="stylesheet" href="vendor/fancybox4/dist/fancybox.css">
+    <link rel="stylesheet" href="vendor/bootstrap5/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
@@ -516,7 +518,7 @@
                                         <label for="ask-1-4">Коммерческое помещение</label>
                                     </div>
                                 </div>
-                                <button class="button button--secondary-gradient">Далее</button>
+                                <button class="button button--secondary-gradient" data-bs-toggle="modal" href="#kviz2">Далее</button>
                             </div>
                         </div>
                     </div>
@@ -1036,6 +1038,385 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Kviz 2 -->
+        <div class="modal fade modal-kviz" id="kviz2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-kviz__header">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-kviz__buttons">
+                        <div></div>
+                        <div class="modal-kviz__close" data-bs-dismiss="modal">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.115 13L24.565 3.56503C24.8475 3.28258 25.0061 2.89949 25.0061 2.50003C25.0061 2.10058 24.8475 1.71749 24.565 1.43503C24.2825 1.15258 23.8995 0.993896 23.5 0.993896C23.1005 0.993896 22.7175 1.15258 22.435 1.43503L13 10.885L3.565 1.43503C3.28254 1.15258 2.89945 0.993897 2.5 0.993897C2.10055 0.993897 1.71746 1.15258 1.435 1.43503C1.15254 1.71749 0.993863 2.10058 0.993863 2.50003C0.993863 2.89949 1.15254 3.28258 1.435 3.56503L10.885 13L1.435 22.435C1.29441 22.5745 1.18282 22.7404 1.10666 22.9232C1.03051 23.106 0.991302 23.302 0.991302 23.5C0.991302 23.6981 1.03051 23.8941 1.10666 24.0769C1.18282 24.2597 1.29441 24.4256 1.435 24.565C1.57444 24.7056 1.74035 24.8172 1.92313 24.8934C2.10592 24.9695 2.30198 25.0087 2.5 25.0087C2.69802 25.0087 2.89408 24.9695 3.07687 24.8934C3.25965 24.8172 3.42556 24.7056 3.565 24.565L13 15.115L22.435 24.565C22.5744 24.7056 22.7403 24.8172 22.9231 24.8934C23.1059 24.9695 23.302 25.0087 23.5 25.0087C23.698 25.0087 23.8941 24.9695 24.0769 24.8934C24.2597 24.8172 24.4256 24.7056 24.565 24.565C24.7056 24.4256 24.8172 24.2597 24.8933 24.0769C24.9695 23.8941 25.0087 23.6981 25.0087 23.5C25.0087 23.302 24.9695 23.106 24.8933 22.9232C24.8172 22.7404 24.7056 22.5745 24.565 22.435L15.115 13Z" fill="#5F236B"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                    <div class="modal-kviz__count"><span>02</span>/08</div>
+                    <div class="modal-kviz__title">Сколько комнат хотите отремонтировать?</div>
+                    <div class="modal-kviz__desc">Пожалуйста, выберите один (или несколько) из объектов,  который хотите отремонтировать</div>
+                    <div class="row u-mb-4">
+                        <div class="col-sm-6 col-12">
+                            <div class="kviz__select">
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="radio" id="ask-2-1" name="ask-2" value="ask-2-1">
+                                    <label for="ask-2-1">Новостройка</label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="radio" id="ask-2-2" name="ask-2" value="ask-2-2">
+                                    <label for="ask-2-2">Вторичное жильё</label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="radio" id="ask-2-3" name="ask-2" value="ask-2-3">
+                                    <label for="ask-2-3">Загородный дом</label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="radio" id="ask-2-4" name="ask-2" value="ask-2-4">
+                                    <label for="ask-2-4">Коммерческое помещение</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-12">
+                            <div class="kviz__select">
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="radio" id="ask-2-5" name="ask-2" value="ask-2-5">
+                                    <label for="ask-2-5">Новостройка</label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="radio" id="ask-2-6" name="ask-2" value="ask-2-6">
+                                    <label for="ask-2-6">Вторичное жильё</label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="radio" id="ask-2-7" name="ask-2" value="ask-2-7">
+                                    <label for="ask-2-7">Загородный дом</label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="radio" id="ask-2-8" name="ask-2" value="ask-2-8">
+                                    <label for="ask-2-8">Коммерческое помещение</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="modal-kviz__input" type="text" placeholder="Введите свой вариант">
+                    <div class="u-text-center u-mb-3">
+                        <button class="button button--primary-gradient" data-bs-target="#kviz3" data-bs-toggle="modal" data-bs-dismiss="modal">Далее</button>
+                    </div>
+                    <div class="modal-kviz__sale">Размер скидки: 2%</div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Kviz 3 -->
+        <div class="modal fade modal-kviz" id="kviz3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-kviz__header">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-kviz__buttons">
+                        <div class="modal-kviz__back" data-bs-target="#kviz2" data-bs-toggle="modal" data-bs-dismiss="modal">
+                            <svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 26L2 14L14 2" stroke="#5F236B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+                        <div class="modal-kviz__close" data-bs-dismiss="modal">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.115 13L24.565 3.56503C24.8475 3.28258 25.0061 2.89949 25.0061 2.50003C25.0061 2.10058 24.8475 1.71749 24.565 1.43503C24.2825 1.15258 23.8995 0.993896 23.5 0.993896C23.1005 0.993896 22.7175 1.15258 22.435 1.43503L13 10.885L3.565 1.43503C3.28254 1.15258 2.89945 0.993897 2.5 0.993897C2.10055 0.993897 1.71746 1.15258 1.435 1.43503C1.15254 1.71749 0.993863 2.10058 0.993863 2.50003C0.993863 2.89949 1.15254 3.28258 1.435 3.56503L10.885 13L1.435 22.435C1.29441 22.5745 1.18282 22.7404 1.10666 22.9232C1.03051 23.106 0.991302 23.302 0.991302 23.5C0.991302 23.6981 1.03051 23.8941 1.10666 24.0769C1.18282 24.2597 1.29441 24.4256 1.435 24.565C1.57444 24.7056 1.74035 24.8172 1.92313 24.8934C2.10592 24.9695 2.30198 25.0087 2.5 25.0087C2.69802 25.0087 2.89408 24.9695 3.07687 24.8934C3.25965 24.8172 3.42556 24.7056 3.565 24.565L13 15.115L22.435 24.565C22.5744 24.7056 22.7403 24.8172 22.9231 24.8934C23.1059 24.9695 23.302 25.0087 23.5 25.0087C23.698 25.0087 23.8941 24.9695 24.0769 24.8934C24.2597 24.8172 24.4256 24.7056 24.565 24.565C24.7056 24.4256 24.8172 24.2597 24.8933 24.0769C24.9695 23.8941 25.0087 23.6981 25.0087 23.5C25.0087 23.302 24.9695 23.106 24.8933 22.9232C24.8172 22.7404 24.7056 22.5745 24.565 22.435L15.115 13Z" fill="#5F236B"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                    <div class="modal-kviz__count"><span>03</span>/08</div>
+                    <div class="modal-kviz__title">Какая площадь помещений?</div>
+                    <div class="modal-kviz__desc">Выберите нужное значение</div>
+                    <div class="row u-mb-5 u-position-relative">
+                        <div class="ui-slider__min">2 м<sup>2</sup></div>
+                        <div id="slider">
+                            <div id="custom-handle" class="ui-slider-handle"></div>
+                        </div>
+                        <div class="ui-slider__max">500 м<sup>2</sup></div>
+                    </div>
+                    <div class="u-text-center u-mb-3">
+                        <button class="button button--primary-gradient" data-bs-target="#kviz4" data-bs-toggle="modal" data-bs-dismiss="modal">Далее</button>
+                    </div>
+                    <div class="modal-kviz__sale">Размер скидки: 3%</div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Kviz 4 -->
+        <div class="modal fade modal-kviz" id="kviz4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-kviz__header">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-kviz__buttons">
+                        <div class="modal-kviz__back" data-bs-target="#kviz3" data-bs-toggle="modal" data-bs-dismiss="modal">
+                            <svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 26L2 14L14 2" stroke="#5F236B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+                        <div class="modal-kviz__close" data-bs-dismiss="modal">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.115 13L24.565 3.56503C24.8475 3.28258 25.0061 2.89949 25.0061 2.50003C25.0061 2.10058 24.8475 1.71749 24.565 1.43503C24.2825 1.15258 23.8995 0.993896 23.5 0.993896C23.1005 0.993896 22.7175 1.15258 22.435 1.43503L13 10.885L3.565 1.43503C3.28254 1.15258 2.89945 0.993897 2.5 0.993897C2.10055 0.993897 1.71746 1.15258 1.435 1.43503C1.15254 1.71749 0.993863 2.10058 0.993863 2.50003C0.993863 2.89949 1.15254 3.28258 1.435 3.56503L10.885 13L1.435 22.435C1.29441 22.5745 1.18282 22.7404 1.10666 22.9232C1.03051 23.106 0.991302 23.302 0.991302 23.5C0.991302 23.6981 1.03051 23.8941 1.10666 24.0769C1.18282 24.2597 1.29441 24.4256 1.435 24.565C1.57444 24.7056 1.74035 24.8172 1.92313 24.8934C2.10592 24.9695 2.30198 25.0087 2.5 25.0087C2.69802 25.0087 2.89408 24.9695 3.07687 24.8934C3.25965 24.8172 3.42556 24.7056 3.565 24.565L13 15.115L22.435 24.565C22.5744 24.7056 22.7403 24.8172 22.9231 24.8934C23.1059 24.9695 23.302 25.0087 23.5 25.0087C23.698 25.0087 23.8941 24.9695 24.0769 24.8934C24.2597 24.8172 24.4256 24.7056 24.565 24.565C24.7056 24.4256 24.8172 24.2597 24.8933 24.0769C24.9695 23.8941 25.0087 23.6981 25.0087 23.5C25.0087 23.302 24.9695 23.106 24.8933 22.9232C24.8172 22.7404 24.7056 22.5745 24.565 22.435L15.115 13Z" fill="#5F236B"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                    <div class="modal-kviz__count"><span>04</span>/08</div>
+                    <div class="modal-kviz__title">В каком состоянии сейчас помещение?</div>
+                    <div class="modal-kviz__desc">Нужно понять будет ли демонтаж. Если голые стены - демонтаж не нужен. Если отделка от застройщика или старая отделка во вторичке - точно нужно будет что-то демонтировать.</div>
+                    <div class="row u-mb-4">
+                        <div class="col-12">
+                            <div class="kviz__select">
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="radio" id="ask-4-1" name="ask-4" value="ask-4-1">
+                                    <label for="ask-4-1">Голые стены</label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="radio" id="ask-4-2" name="ask-4" value="ask-4-2">
+                                    <label for="ask-4-2">Отделка застройщика</label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="radio" id="ask-4-3" name="ask-4" value="ask-4-3">
+                                    <label for="ask-4-3">Старая отделка</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-text-center u-mb-3">
+                        <button class="button button--primary-gradient" data-bs-target="#kviz5" data-bs-toggle="modal" data-bs-dismiss="modal">Далее</button>
+                    </div>
+                    <div class="modal-kviz__sale">Размер скидки: 4%</div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Kviz 5 -->
+        <div class="modal fade modal-kviz" id="kviz5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-kviz__header">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-kviz__buttons">
+                        <div class="modal-kviz__back" data-bs-target="#kviz4" data-bs-toggle="modal" data-bs-dismiss="modal">
+                            <svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 26L2 14L14 2" stroke="#5F236B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+                        <div class="modal-kviz__close" data-bs-dismiss="modal">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.115 13L24.565 3.56503C24.8475 3.28258 25.0061 2.89949 25.0061 2.50003C25.0061 2.10058 24.8475 1.71749 24.565 1.43503C24.2825 1.15258 23.8995 0.993896 23.5 0.993896C23.1005 0.993896 22.7175 1.15258 22.435 1.43503L13 10.885L3.565 1.43503C3.28254 1.15258 2.89945 0.993897 2.5 0.993897C2.10055 0.993897 1.71746 1.15258 1.435 1.43503C1.15254 1.71749 0.993863 2.10058 0.993863 2.50003C0.993863 2.89949 1.15254 3.28258 1.435 3.56503L10.885 13L1.435 22.435C1.29441 22.5745 1.18282 22.7404 1.10666 22.9232C1.03051 23.106 0.991302 23.302 0.991302 23.5C0.991302 23.6981 1.03051 23.8941 1.10666 24.0769C1.18282 24.2597 1.29441 24.4256 1.435 24.565C1.57444 24.7056 1.74035 24.8172 1.92313 24.8934C2.10592 24.9695 2.30198 25.0087 2.5 25.0087C2.69802 25.0087 2.89408 24.9695 3.07687 24.8934C3.25965 24.8172 3.42556 24.7056 3.565 24.565L13 15.115L22.435 24.565C22.5744 24.7056 22.7403 24.8172 22.9231 24.8934C23.1059 24.9695 23.302 25.0087 23.5 25.0087C23.698 25.0087 23.8941 24.9695 24.0769 24.8934C24.2597 24.8172 24.4256 24.7056 24.565 24.565C24.7056 24.4256 24.8172 24.2597 24.8933 24.0769C24.9695 23.8941 25.0087 23.6981 25.0087 23.5C25.0087 23.302 24.9695 23.106 24.8933 22.9232C24.8172 22.7404 24.7056 22.5745 24.565 22.435L15.115 13Z" fill="#5F236B"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                    <div class="modal-kviz__count"><span>05</span>/08</div>
+                    <div class="modal-kviz__title">Требуется перепланировка?</div>
+                    <div class="modal-kviz__desc">Даже в новой квартире возможно поменять планировку "под себя".
+                        Если нужно помочь согласовать снос стен - выберите первый вариант.</div>
+                    <div class="row u-mb-4">
+                        <div class="col-12">
+                            <div class="kviz__select">
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="radio" id="ask-5-1" name="ask-5" value="ask-5-1">
+                                    <label for="ask-5-1">Да, нужна помощь с согласованием</label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="radio" id="ask-5-2" name="ask-5" value="ask-5-2">
+                                    <label for="ask-5-2">Будем делать, согласование не требуется</label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="radio" id="ask-5-3" name="ask-5" value="ask-5-3">
+                                    <label for="ask-5-3">Перепланировки не будет</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-text-center u-mb-3">
+                        <button class="button button--primary-gradient" data-bs-target="#kviz6" data-bs-toggle="modal" data-bs-dismiss="modal">Далее</button>
+                    </div>
+                    <div class="modal-kviz__sale">Размер скидки: 5%</div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Kviz 6 -->
+        <div class="modal fade modal-kviz" id="kviz6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-kviz__header">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-kviz__buttons">
+                        <div class="modal-kviz__back" data-bs-target="#kviz5" data-bs-toggle="modal" data-bs-dismiss="modal">
+                            <svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 26L2 14L14 2" stroke="#5F236B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+                        <div class="modal-kviz__close" data-bs-dismiss="modal">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.115 13L24.565 3.56503C24.8475 3.28258 25.0061 2.89949 25.0061 2.50003C25.0061 2.10058 24.8475 1.71749 24.565 1.43503C24.2825 1.15258 23.8995 0.993896 23.5 0.993896C23.1005 0.993896 22.7175 1.15258 22.435 1.43503L13 10.885L3.565 1.43503C3.28254 1.15258 2.89945 0.993897 2.5 0.993897C2.10055 0.993897 1.71746 1.15258 1.435 1.43503C1.15254 1.71749 0.993863 2.10058 0.993863 2.50003C0.993863 2.89949 1.15254 3.28258 1.435 3.56503L10.885 13L1.435 22.435C1.29441 22.5745 1.18282 22.7404 1.10666 22.9232C1.03051 23.106 0.991302 23.302 0.991302 23.5C0.991302 23.6981 1.03051 23.8941 1.10666 24.0769C1.18282 24.2597 1.29441 24.4256 1.435 24.565C1.57444 24.7056 1.74035 24.8172 1.92313 24.8934C2.10592 24.9695 2.30198 25.0087 2.5 25.0087C2.69802 25.0087 2.89408 24.9695 3.07687 24.8934C3.25965 24.8172 3.42556 24.7056 3.565 24.565L13 15.115L22.435 24.565C22.5744 24.7056 22.7403 24.8172 22.9231 24.8934C23.1059 24.9695 23.302 25.0087 23.5 25.0087C23.698 25.0087 23.8941 24.9695 24.0769 24.8934C24.2597 24.8172 24.4256 24.7056 24.565 24.565C24.7056 24.4256 24.8172 24.2597 24.8933 24.0769C24.9695 23.8941 25.0087 23.6981 25.0087 23.5C25.0087 23.302 24.9695 23.106 24.8933 22.9232C24.8172 22.7404 24.7056 22.5745 24.565 22.435L15.115 13Z" fill="#5F236B"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                    <div class="modal-kviz__count"><span>06</span>/08</div>
+                    <div class="modal-kviz__title">Нужна ли вам помощь с комплектацией?</div>
+                    <div class="modal-kviz__desc">Отдел снабжения обеспечит закупку всего необходимого по лучшей цене</div>
+                    <div class="row u-mb-4">
+                        <div class="col-sm-6 col-12">
+                            <div class="kviz__select">
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="checkbox" id="ask-6-1" name="ask-6" value="ask-6-1">
+                                    <label for="ask-6-1">Окна</label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="checkbox" id="ask-6-2" name="ask-6" value="ask-6-2">
+                                    <label for="ask-6-2">Двери</label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="checkbox" id="ask-6-3" name="ask-6" value="ask-6-3">
+                                    <label for="ask-6-3">Сантехника</label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="checkbox" id="ask-6-4" name="ask-6" value="ask-6-4">
+                                    <label for="ask-6-4">Кухня</label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="checkbox" id="ask-6-5" name="ask-6" value="ask-6-5">
+                                    <label for="ask-6-5">Мебель</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-12">
+                            <div class="kviz__select">
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="checkbox" id="ask-6-6" name="ask-6" value="ask-6-6">
+                                    <label for="ask-6-6">Кондиционеры</label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="checkbox" id="ask-6-7" name="ask-6" value="ask-6-7">
+                                    <label for="ask-6-7">Освещение и ЭТМ</label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="checkbox" id="ask-6-8" name="ask-6" value="ask-6-8">
+                                    <label for="ask-6-8">Помощь в подборе и закупке всех материалов</label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="checkbox" id="ask-6-9" name="ask-6" value="ask-6-9">
+                                    <label for="ask-6-9">Нет, спасибо!</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-text-center u-mb-3">
+                        <button class="button button--primary-gradient" data-bs-target="#kviz7" data-bs-toggle="modal" data-bs-dismiss="modal">Далее</button>
+                    </div>
+                    <div class="modal-kviz__sale">Размер скидки: 6%</div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Kviz 7 -->
+        <div class="modal fade modal-kviz" id="kviz7" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-kviz__header">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-kviz__buttons">
+                        <div class="modal-kviz__back" data-bs-target="#kviz6" data-bs-toggle="modal" data-bs-dismiss="modal">
+                            <svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 26L2 14L14 2" stroke="#5F236B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+                        <div class="modal-kviz__close" data-bs-dismiss="modal">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.115 13L24.565 3.56503C24.8475 3.28258 25.0061 2.89949 25.0061 2.50003C25.0061 2.10058 24.8475 1.71749 24.565 1.43503C24.2825 1.15258 23.8995 0.993896 23.5 0.993896C23.1005 0.993896 22.7175 1.15258 22.435 1.43503L13 10.885L3.565 1.43503C3.28254 1.15258 2.89945 0.993897 2.5 0.993897C2.10055 0.993897 1.71746 1.15258 1.435 1.43503C1.15254 1.71749 0.993863 2.10058 0.993863 2.50003C0.993863 2.89949 1.15254 3.28258 1.435 3.56503L10.885 13L1.435 22.435C1.29441 22.5745 1.18282 22.7404 1.10666 22.9232C1.03051 23.106 0.991302 23.302 0.991302 23.5C0.991302 23.6981 1.03051 23.8941 1.10666 24.0769C1.18282 24.2597 1.29441 24.4256 1.435 24.565C1.57444 24.7056 1.74035 24.8172 1.92313 24.8934C2.10592 24.9695 2.30198 25.0087 2.5 25.0087C2.69802 25.0087 2.89408 24.9695 3.07687 24.8934C3.25965 24.8172 3.42556 24.7056 3.565 24.565L13 15.115L22.435 24.565C22.5744 24.7056 22.7403 24.8172 22.9231 24.8934C23.1059 24.9695 23.302 25.0087 23.5 25.0087C23.698 25.0087 23.8941 24.9695 24.0769 24.8934C24.2597 24.8172 24.4256 24.7056 24.565 24.565C24.7056 24.4256 24.8172 24.2597 24.8933 24.0769C24.9695 23.8941 25.0087 23.6981 25.0087 23.5C25.0087 23.302 24.9695 23.106 24.8933 22.9232C24.8172 22.7404 24.7056 22.5745 24.565 22.435L15.115 13Z" fill="#5F236B"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                    <div class="modal-kviz__count"><span>07</span>/08</div>
+                    <div class="modal-kviz__title">Выберите ваш подарок!</div>
+                    <div class="modal-kviz__desc">Самая приятная часть опроса</div>
+                    <div class="row u-mb-4">
+                        <div class="col-12">
+                            <div class="kviz__select">
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="radio" id="ask-7-1" name="ask-7" value="ask-7-1">
+                                    <label for="ask-7-1">Наушники Apple AirPods <img src="img/airpods.png" alt="Airpods 2" class="u-ms-3"></label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="radio" id="ask-7-2" name="ask-7" value="ask-7-2">
+                                    <label for="ask-7-2">Утюг Tefal Ultimate Pure <img src="img/utug.png" alt="Tefal Ultimate Pure" class="u-ms-3"></label>
+                                </div>
+                                <div class="kviz__checkbox">
+                                    <input class="kviz__checkbox-input" type="radio" id="ask-7-3" name="ask-7" value="ask-7-3">
+                                    <label for="ask-7-3">Фотопринтер Lifeprint 2х3 <img src="img/printer.png" alt="Lifeprint 2х3" class="u-ms-3"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-text-center u-mb-3">
+                        <button class="button button--primary-gradient" data-bs-target="#kviz8" data-bs-toggle="modal" data-bs-dismiss="modal">Далее</button>
+                    </div>
+                    <div class="modal-kviz__sale">Размер скидки: 6%</div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Kviz 8 -->
+        <div class="modal fade modal-kviz" id="kviz8" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-kviz__header">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-kviz__buttons">
+                        <div class="modal-kviz__back" data-bs-target="#kviz7" data-bs-toggle="modal" data-bs-dismiss="modal">
+                            <svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 26L2 14L14 2" stroke="#5F236B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+                        <div class="modal-kviz__close" data-bs-dismiss="modal">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.115 13L24.565 3.56503C24.8475 3.28258 25.0061 2.89949 25.0061 2.50003C25.0061 2.10058 24.8475 1.71749 24.565 1.43503C24.2825 1.15258 23.8995 0.993896 23.5 0.993896C23.1005 0.993896 22.7175 1.15258 22.435 1.43503L13 10.885L3.565 1.43503C3.28254 1.15258 2.89945 0.993897 2.5 0.993897C2.10055 0.993897 1.71746 1.15258 1.435 1.43503C1.15254 1.71749 0.993863 2.10058 0.993863 2.50003C0.993863 2.89949 1.15254 3.28258 1.435 3.56503L10.885 13L1.435 22.435C1.29441 22.5745 1.18282 22.7404 1.10666 22.9232C1.03051 23.106 0.991302 23.302 0.991302 23.5C0.991302 23.6981 1.03051 23.8941 1.10666 24.0769C1.18282 24.2597 1.29441 24.4256 1.435 24.565C1.57444 24.7056 1.74035 24.8172 1.92313 24.8934C2.10592 24.9695 2.30198 25.0087 2.5 25.0087C2.69802 25.0087 2.89408 24.9695 3.07687 24.8934C3.25965 24.8172 3.42556 24.7056 3.565 24.565L13 15.115L22.435 24.565C22.5744 24.7056 22.7403 24.8172 22.9231 24.8934C23.1059 24.9695 23.302 25.0087 23.5 25.0087C23.698 25.0087 23.8941 24.9695 24.0769 24.8934C24.2597 24.8172 24.4256 24.7056 24.565 24.565C24.7056 24.4256 24.8172 24.2597 24.8933 24.0769C24.9695 23.8941 25.0087 23.6981 25.0087 23.5C25.0087 23.302 24.9695 23.106 24.8933 22.9232C24.8172 22.7404 24.7056 22.5745 24.565 22.435L15.115 13Z" fill="#5F236B"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                    <div class="modal-kviz__count"><span>08</span>/08</div>
+                    <div class="modal-kviz__title">Вы близки к решению</div>
+                    <div class="modal-kviz__desc">Заполните эти поля и мы поможем вам!</div>
+                    <div class="row u-mb-4">
+                        <div class="col-12">
+                            <div>
+                                <input class="modal-kviz__input u-mb-3" type="text" placeholder="Ваше имя">
+                            </div>
+                            <div>
+                                <input class="modal-kviz__input u-mb-0" type="text" placeholder="Номер телефона">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-text-center u-mb-3">
+                        <button class="button button--primary-gradient" data-bs-target="#kviz-thanks" data-bs-toggle="modal" data-bs-dismiss="modal">Отправить</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Kviz THANKS -->
+        <div class="modal fade modal-kviz" id="kviz-thanks" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-kviz__header">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-kviz__buttons">
+                        <div></div>
+                        <div class="modal-kviz__close" data-bs-dismiss="modal">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.115 13L24.565 3.56503C24.8475 3.28258 25.0061 2.89949 25.0061 2.50003C25.0061 2.10058 24.8475 1.71749 24.565 1.43503C24.2825 1.15258 23.8995 0.993896 23.5 0.993896C23.1005 0.993896 22.7175 1.15258 22.435 1.43503L13 10.885L3.565 1.43503C3.28254 1.15258 2.89945 0.993897 2.5 0.993897C2.10055 0.993897 1.71746 1.15258 1.435 1.43503C1.15254 1.71749 0.993863 2.10058 0.993863 2.50003C0.993863 2.89949 1.15254 3.28258 1.435 3.56503L10.885 13L1.435 22.435C1.29441 22.5745 1.18282 22.7404 1.10666 22.9232C1.03051 23.106 0.991302 23.302 0.991302 23.5C0.991302 23.6981 1.03051 23.8941 1.10666 24.0769C1.18282 24.2597 1.29441 24.4256 1.435 24.565C1.57444 24.7056 1.74035 24.8172 1.92313 24.8934C2.10592 24.9695 2.30198 25.0087 2.5 25.0087C2.69802 25.0087 2.89408 24.9695 3.07687 24.8934C3.25965 24.8172 3.42556 24.7056 3.565 24.565L13 15.115L22.435 24.565C22.5744 24.7056 22.7403 24.8172 22.9231 24.8934C23.1059 24.9695 23.302 25.0087 23.5 25.0087C23.698 25.0087 23.8941 24.9695 24.0769 24.8934C24.2597 24.8172 24.4256 24.7056 24.565 24.565C24.7056 24.4256 24.8172 24.2597 24.8933 24.0769C24.9695 23.8941 25.0087 23.6981 25.0087 23.5C25.0087 23.302 24.9695 23.106 24.8933 22.9232C24.8172 22.7404 24.7056 22.5745 24.565 22.435L15.115 13Z" fill="#5F236B"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                    <div class="modal-kviz__title">Спасибо!</div>
+                    <div class="modal-kviz__desc">Менеджер свяжется с вами в ближайшее время</div>
+                </div>
+              </div>
+            </div>
+        </div>
         
     </div>
 
@@ -1044,6 +1425,8 @@
     <script src="vendor/mmenu/dist/mmenu.js"></script>
     <script src="vendor/mburger-css/dist/mburger.js"></script>
     <script src="vendor/fancybox4/dist/fancybox.umd.js"></script>
+    <script src="vendor/bootstrap5/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

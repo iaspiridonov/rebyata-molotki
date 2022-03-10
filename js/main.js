@@ -89,4 +89,21 @@ $(document).ready(function () {
 			$('#'+id).show();
 		}
 	});
+
+	// Init Jquery-UI
+	$( function() {
+		var handle = $("#custom-handle");
+		$("#slider").slider({
+			create: function() {
+				handle.text($(this).slider("value") );
+			},
+			slide: function(event, ui) {
+				handle.text(ui.value);
+			},
+		  	range: 'min',
+			min: 2,
+			max: 500,
+		});
+		// $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+	});
 });
