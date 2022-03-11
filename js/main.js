@@ -32,6 +32,9 @@ $(document).ready(function () {
 		  el: '.swiper-promo__pagination',
 		},
 	});
+	
+	// Init swiper-offer
+	const swiperOffer = new Swiper('.swiper-offer', {});
 
 	// Init swiper-jobs
 	const swiperJobs = new Swiper('.swiper-jobs', {
