@@ -76,15 +76,76 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h1 class="u-color-secondary">Контакты</h1>
+                        <div class="city-swap">
+                            <h1 class="u-color-secondary">Контакты</h1>
+                            <div>
+                                <span data-href="msk" class="u-h4 u-me-3 city-swap-item">Москва</span>
+                                <span data-href="spb" class="u-h4 city-swap-item city-swap-item--active">Санкт-Петербург</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section section--contact" id="msk">
             <div class="container">
                 <div class="row u-mb-lg-5 u-mb-4">
+                    <div class="col-12">
+                        <h1>(МОСКВА)</h1>
+                    </div>
+                    <div class="col-lg-4 u-mb-4 u-mb-lg-0">
+                        <div class="u-h4 u-color-primary">Позвоните нам:</div>
+                        <a class="u-h3 u-color-secondary" href="tel: +7 499 648-33-34">+7 499 648-33-34</a>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="u-h4 u-color-primary">Напишите нам:</div>
+                        <a class="u-h3 u-color-secondary" href="mailto: info@rebyata-molotki.moscow">info@rebyata-molotki.moscow</a>
+                    </div>
+                </div>
+                <div class="row u-mb-5">
+                    <div class="u-h4 u-color-primary">Приходите к нам::</div>
+                    <div class="u-color-secondary">
+                        <div>м. Нагатинская, 1-й Нагатинский проезд, 6с1</div>
+                        <div>м. Кожуховская, Южнопортовая улица, 32</div>
+                        <div>м. Ховрино, Ижорская улица, 5</div>
+                        <div>м. Перово, Первый проезд Перова Поля 9, ст. 2</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A96f9f3ba6044bf1ff273088ecd972dcd5cb698e085ed178d4848c864dced2e39&amp;source=constructor" width="100%" height="600" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="row u-justify-content-center">
+                    <div class="col-xl-6 col-md-8 col-sm-10 col-12">
+                        <form class="map__form" method="POST">
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <input class="modal-kviz__input u-mb-3" type="text" placeholder="Ваше имя">
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <input class="modal-kviz__input u-mb-3" type="text" placeholder="Ваша почта">
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="msg" id="" rows="7"></textarea>
+                                </div>
+                                <div class="col-12 u-text-center">
+                                    <button type="submit" class="button button--primary-gradient">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--contact" style="display: none;" id="spb">
+            <div class="container">
+                <div class="row u-mb-lg-5 u-mb-4">
+                    <div class="col-12">
+                        <h1>(СПБ)</h1>
+                    </div>
                     <div class="col-lg-4 u-mb-4 u-mb-lg-0">
                         <div class="u-h4 u-color-primary">Позвоните нам:</div>
                         <a class="u-h3 u-color-secondary" href="tel: +7 499 648-33-34">+7 499 648-33-34</a>

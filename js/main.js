@@ -109,4 +109,15 @@ $(document).ready(function () {
 		});
 		// $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 	});
+
+	$('.city-swap-item').click(function (e) { 
+		let id = $(this).attr('data-href');
+		let sibling = $(this).siblings('.city-swap-item');
+
+		sibling.addClass('city-swap-item--active');
+		$(this).removeClass('city-swap-item--active');
+
+		$('.section--contact').hide();
+		$('#' + id).show();
+	});
 });

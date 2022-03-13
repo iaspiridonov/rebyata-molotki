@@ -1,0 +1,17 @@
+.city-swap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+
+    &-item {
+        color: $color-secondary !important;
+        text-decoration: none;
+        
+        &--active {
+            color: #919399 !important;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
