@@ -102,6 +102,10 @@
 
             &:hover {
                 color: $color-primary;
+
+                & path {
+                    fill: $color-primary;
+                }
             }
         }
     }

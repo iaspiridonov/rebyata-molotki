@@ -1,0 +1,27 @@
+.project-form {
+    padding: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media (min-width: $lg) {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        padding: 30px 60px;
+    }
+
+    & button {
+        min-width: 250px;
+    }
+
+    & input {
+        @media (min-width: $lg) {
+            margin-right: 20px;
+            margin-bottom: 0 !important;
+        }
+    }
+}
