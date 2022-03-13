@@ -14,6 +14,17 @@
     flex-direction: column;
     flex-wrap: nowrap;
 
+    &--triangle {
+        background-color: transparent;
+        border: none;
+        border-radius: 0 !important;
+        
+        background-image: url('../img/cta-projects.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
     @media (min-width: $sm) {
         border-radius: 500px;
         width: 516px;

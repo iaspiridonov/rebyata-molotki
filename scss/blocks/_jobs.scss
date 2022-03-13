@@ -39,11 +39,16 @@
             &-value {
                 color: $color-secondary;
                 font-weight: 700;
-                font-size: 30px;
+                font-size: 42px;
+                font-family: $font-family-headings;
+
+                & span {
+                    font-size: 30px;
+                }
 
                 & sup {
                     line-height: 1;
-                    font-size: 14px;
+                    font-size: 20px;
                 }
             }
         }

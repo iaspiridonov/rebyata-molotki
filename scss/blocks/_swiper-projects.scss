@@ -1,0 +1,111 @@
+.swiper-projects {
+    & .container {
+        @media (max-width: 767.98px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__img {
+        z-index: 2;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        height: initial !important;
+        object-fit: contain;
+        order: 2;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: flex-end;
+
+        @media (min-width: $md) {
+            margin-right: initial;
+            margin-left: auto;
+            height: 400px;
+            order: 1;
+        }
+
+        @media (min-width: $lg) {
+            height: 517px;
+        }
+
+        & img {
+            object-fit: contain;
+            width: 100%;
+            max-width: 400px;
+
+            @media (min-width: $sm) {
+                max-width: initial;
+            }
+
+            @media (min-width: $md) {
+                width: 50%;
+            }
+
+            @media (min-width: $lg) {
+                width: 58%;
+            }
+
+            @media (min-width: $xxl) {
+                width: initial;
+            }
+        }
+    }
+
+    &__bg {
+        height: calc(100% - 110px);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 50px;
+
+        @media (min-width: $lg) {
+            height: calc(100% - 193px);
+            bottom: 100px;
+        }
+
+        @media (min-width: $xl) {
+            height: calc(100% - 293px);
+            bottom: 200px;
+        }
+
+        &--primary {
+            background: $gradient-primary;
+        }
+
+        &--secondary {
+            background: $gradient-secondary;
+        }
+    }
+
+    &__title {
+        top: 0;
+        font-weight: 700;
+        font-size: 64px;
+        font-family: $font-family-headings;
+        color: #fff;
+        line-height: 1;
+        z-index: 2;
+        order: 1;
+        margin-bottom: 30px;
+
+        @media (min-width: $md) {
+            position: absolute;
+            order: 2;
+            margin-bottom: 0;
+        }
+
+        @media (min-width: $lg) {
+            font-size: 100px;
+        }
+
+        & span {
+            color: $color-secondary;
+        }
+
+        &-link {
+            display: block;
+        }
+    }
+}
