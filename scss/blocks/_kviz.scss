@@ -18,11 +18,14 @@
         background-color: transparent;
         border: none;
         border-radius: 0 !important;
-        
-        background-image: url('../img/cta-projects.svg');
+        background: $gradient-primary;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+
+        @media (min-width: $sm) {
+            background-image: url('../img/cta-projects.svg');
+        }
     }
 
     @media (min-width: $sm) {
