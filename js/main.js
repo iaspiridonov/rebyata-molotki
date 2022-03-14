@@ -30,6 +30,7 @@ $(document).ready(function () {
 	  
 		pagination: {
 		  el: '.swiper-promo__pagination',
+		  clickable: true
 		},
 	});
 	

@@ -5,4 +5,31 @@
         height: 100%;
         object-fit: cover;
     }
+
+    &__spec {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        & li {
+            border-bottom: 1px solid #E0E2E7;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            & a {
+                color: #2559CA;
+            }
+        }
+    }
+
+    &__iframe {
+        height: 300px;
+
+        @media (min-width: $md) {
+            height: 400px;
+        }
+
+        @media (min-width: $lg) {
+            height: 500px;
+        }
+    }
 }
